@@ -4,14 +4,17 @@
   overflow: hidden;
 }
 .witcherBackOne{
+  object-fit: cover;
   position: absolute;
   z-index: 1;
 }
 .witcherMiddleOne{
+  object-fit: cover;
   position: absolute;
   z-index: 2;
 }
 .witcherFrontOne{
+  object-fit: cover;
   position: absolute;
   z-index: 3;
 }
@@ -29,27 +32,27 @@ img {
   box-sizing: border-box;
 }
 
-.witcherBack {
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-background-image:url(image/screen-1/layer-back.jpg);
-}
-.witcherMiddle {
-  position: absolute;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  background-image:url(image/screen-1/layer-middle.png);
-}
-.witcherFront{
-  width: 100%;
-  position: absolute;
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-image:url(image/screen-1/layer-front.png);
-}
+/*.witcherBack {*/
+/*  background-repeat: no-repeat;*/
+/*  position: absolute;*/
+/*  width: 100%;*/
+/*  height: 100vh;*/
+/*background-image:url(image/screen-1/layer-back.jpg);*/
+/*}*/
+/*.witcherMiddle {*/
+/*  position: absolute;*/
+/*  background-repeat: no-repeat;*/
+/*  width: 100%;*/
+/*  height: 100vh;*/
+/*  background-image:url(image/screen-1/layer-middle.png);*/
+/*}*/
+/*.witcherFront{*/
+/*  width: 100%;*/
+/*  position: absolute;*/
+/*  background-repeat: no-repeat;*/
+/*  height: 100vh;*/
+/*  background-image:url(image/screen-1/layer-front.png);*/
+/*}*/
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
