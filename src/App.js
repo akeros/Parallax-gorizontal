@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y, Parallax } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Parallax,FreeMode,Autoplay,Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -24,56 +24,40 @@ import ciri from "./image/screen-3/layer-ciri.png";
 function App() {
     return (
         <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Parallax]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Parallax,FreeMode,Autoplay,Mousewheel]}
             spaceBetween={30}
-            speed={2400}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
+            mousewheel={true}
+            speed={1800}
+            Pagination={{ clickable: true }}
+            Scrollbar={{ draggable: true }}
             slidesPerView={1}
             parallax={true}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            style={{ background: 'black' }}
+            style={{ background: 'black', willChange:"transform" }}
         >
-            <SwiperSlide style={{ height: '100vh', overflow: 'hidden' }}>
-                {/*<div style={{ height: '100vh', minWidth: '100vw' }} />*/}
-                {/*<div className="witcherBack" data-swiper-parallax="40%"/>*/}
-                {/*<div className="witcherMiddle" data-swiper-parallax="25%"/>*/}
-                {/*<div className="witcherFront" data-swiper-parallax="14%"/>*/}
+            <SwiperSlide style={{ height: '100vh', overflow: 'hidden',transformStyle:"preserve-3d" }}>
                 <img src={witcherBack} className="witcherBackOne" data-swiper-parallax="40%" alt="text"/>
                 <img src={witcherMiddle} className="witcherMiddleOne" data-swiper-parallax="25%" alt="text"/>
                 <img src={witcherFront} className="witcherFrontOne" data-swiper-parallax="14%" alt="text"/>
             </SwiperSlide>
-            <SwiperSlide style={{ height: '100vh', overflow: 'hidden' }}>
-                {/*<div style={{ height: '100vh', minWidth: '100vw' }} />*/}
+            <SwiperSlide style={{ height: '100vh', overflow: 'hidden',transformStyle:"preserve-3d" }}>
                 <img src={geraBack} className="witcherBackOne" data-swiper-parallax="40%" alt="text"/>
                 <img src={gera} className="witcherMiddleOne" data-swiper-parallax="25%" alt="text"/>
                 <img src={yen} className="witcherMiddleOne" data-swiper-parallax="28%" alt="text"/>
                 <img src={geraFront} className="witcherFrontOne" data-swiper-parallax="14%" alt="text"/>
             </SwiperSlide>
-            <SwiperSlide style={{ height: '100vh', overflow: 'hidden' }}>
-                {/*<div style={{ height: '100vh', minWidth: '100vw' }} />*/}
+            <SwiperSlide style={{ height: '100vh', overflow: 'hidden',transformStyle:"preserve-3d" }}>
                 <img src={ciriBack} className="witcherBackOne" data-swiper-parallax="40%" alt="text"/>
                 <img src={ciriMiddle} className="witcherMiddleOne" data-swiper-parallax="25%" alt="text"/>
                 <img src={ciri} className="witcherMiddleOne" data-swiper-parallax="28%" alt="text"/>
                 <img src={ciriFront} className="witcherFrontOne" data-swiper-parallax="14%" alt="text"/>
             </SwiperSlide>
         </Swiper>
-        // <Swiper
-        //     // install Swiper modules
-        //     modules={[Navigation, Pagination, Scrollbar, A11y, Parallax]}
-        //     spaceBetween={50}
-        //     slidesPerView={3}
-        //     navigation
-        //     // parallax
-        //     pagination={{ clickable: true }}
-        //     scrollbar={{ draggable: true }}
-        //     onSwiper={(swiper) => console.log(swiper)}
-        //     onSlideChange={() => console.log('slide change')}
-        // >
-        //     <SwiperSlide>Slide 1</SwiperSlide>
-        //     <SwiperSlide>Slide 2</SwiperSlide>
-        //     <SwiperSlide>Slide 3</SwiperSlide>
-        //     <SwiperSlide>Slide 4</SwiperSlide>
-        // </Swiper>
     );
 }
 
