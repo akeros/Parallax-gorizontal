@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Parallax-gorizontal/static/css/main.0089af87.css",
-    "main.js": "/Parallax-gorizontal/static/js/main.71e623c2.js",
+    "main.css": "/Parallax-gorizontal/static/css/main.259699f4.css",
+    "main.js": "/Parallax-gorizontal/static/js/main.a59965f5.js",
     "static/js/787.a0ca33ec.chunk.js": "/Parallax-gorizontal/static/js/787.a0ca33ec.chunk.js",
     "static/media/screen-1.png": "/Parallax-gorizontal/static/media/screen-1.726a317684e4a4e261ea.png",
     "static/media/layer-middle.png": "/Parallax-gorizontal/static/media/layer-middle.96d2c366d4d2ca9a9cf5.png",
@@ -11,12 +11,12 @@
     "static/media/layer-back.jpg": "/Parallax-gorizontal/static/media/layer-back.d4ed91a38ff9b8bea574.jpg",
     "static/media/layer-gera.png": "/Parallax-gorizontal/static/media/layer-gera.384e42a9d927b5159886.png",
     "index.html": "/Parallax-gorizontal/index.html",
-    "main.0089af87.css.map": "/Parallax-gorizontal/static/css/main.0089af87.css.map",
-    "main.71e623c2.js.map": "/Parallax-gorizontal/static/js/main.71e623c2.js.map",
+    "main.259699f4.css.map": "/Parallax-gorizontal/static/css/main.259699f4.css.map",
+    "main.a59965f5.js.map": "/Parallax-gorizontal/static/js/main.a59965f5.js.map",
     "787.a0ca33ec.chunk.js.map": "/Parallax-gorizontal/static/js/787.a0ca33ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0089af87.css",
-    "static/js/main.71e623c2.js"
+    "static/css/main.259699f4.css",
+    "static/js/main.a59965f5.js"
   ]
 }
